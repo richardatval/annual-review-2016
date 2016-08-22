@@ -139,7 +139,14 @@ section {
 	}
 }
 
-#in-numbers {
+#sixties-val {
+	background-image: url('#{"" + $image-directory}/sixties-val-mobile.jpg');
+	@include media($tablet) {
+		background-image: url('#{"" + $image-directory}/sixties-val.jpg');
+	}
+}
+
+section.in-numbers {
 	padding: $gutter;
 	color: $brand-primary;
 	background-color: #fff;
@@ -152,18 +159,7 @@ section {
 	}
 }
 
-
-#purple {
-	padding: $gutter;
-	color: #ffffff;
-	background-color: $purple;
-	h1 {
-		padding-bottom: 0.25em;
-		border-bottom: 1px solid #ffffff;
-	}
-}
-
-#green {
+section.green {
 	padding: $gutter;
 	color: #ffffff;
 	background-color: $green;
@@ -173,7 +169,27 @@ section {
 	}
 }
 
-#blue {
+section.purple {
+	padding: $gutter;
+	color: #ffffff;
+	background-color: $purple;
+	h1 {
+		padding-bottom: 0.25em;
+		border-bottom: 1px solid #ffffff;
+	}
+}
+
+section.pink {
+	padding: $gutter;
+	color: #ffffff;
+	background-color: $pink;
+	h1 {
+		padding-bottom: 0.25em;
+		border-bottom: 1px solid #ffffff;
+	}
+}
+
+section.blue {
 	padding: $gutter;
 	color: #ffffff;
 	background-color: $blue;
@@ -183,7 +199,17 @@ section {
 	}
 }
 
-#orange {
+section.light-blue {
+	padding: $gutter;
+	color: #ffffff;
+	background-color: $light-blue;
+	h1 {
+		padding-bottom: 0.25em;
+		border-bottom: 1px solid #ffffff;
+	}
+}
+
+section.orange {
 	padding: $gutter;
 	color: #ffffff;
 	background-color: $orange;
@@ -221,6 +247,9 @@ section {
 			background-size: 16px 13px;
 		}
 	}
+}
+
+#communities-in-numbers {
 }
 
 .icon-stats {
