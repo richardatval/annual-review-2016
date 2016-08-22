@@ -1,0 +1,20 @@
+.footer {
+  $base-spacing: 1.5em !default;
+  $footer-background: $brand-primary;
+  $footer-color: #ffffff;
+  $footer-link-color: desaturate(darken($footer-background, 40%), 50%);
+  background: $footer-background;
+    .footer-copyright {
+		padding: $gutter;
+		font-size: 0.5em;
+	}
+    .footer-copyright {
+      padding: $gutter;
+      clear: both;
+      width: 100%;
+      color: $footer-color;
+      font-size: 0.8em;
+      line-height: 1.5em;
+      margin: auto;
+    }
+}

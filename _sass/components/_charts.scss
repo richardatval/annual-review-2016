@@ -1,0 +1,17 @@
+section.charts {
+@include outer-container;
+}
+
+.chart-wrapper {
+	padding: $gutter;
+	@include fill-parent;
+	@include media($tablet) {
+		@include span-columns(3 of 12);
+	}
+	
+	h3 {
+		color: #000;
+		text-align: center;
+	}
+}
+

@@ -1,0 +1,29 @@
+{
+  "name": "annual-review-2015.valonline.org.uk",
+  "authors": [
+    "richardatval <richard.s@valonline.org.uk>"
+  ],
+  "description": "Javascript components for the VAL Annual Review.",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.7",
+    "neat": "~1.7.4",
+    "normalize-css": "~4.1.1",
+    "normalize-scss": "~3.0.3",
+    "smoothstate": "~0.7.2",
+    "jquery.inview": "https://github.com/protonet/jquery.inview.git",
+    "Chart.js": "chartjs#^2.1.3",
+    "chartist": "^0.9.7",
+    "fittext": "1.2.0",
+    "bigtext": "^0.1.8"
+  }
+}

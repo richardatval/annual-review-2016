@@ -1,0 +1,289 @@
+section {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	min-height: 600px;
+	span.normal {
+		font-weight: normal;
+	}
+	article {
+		@include outer-container;
+		@include media($tablet) {
+			padding: $gutter;
+		}
+		.copy {
+			margin-top: 300px;	
+			@include media($tablet) {
+				margin-top: auto;
+			}
+			h1 {
+				padding-bottom: 0.25em;
+				border-bottom: 1px solid #fff;
+			}
+			@include media($bigscreen) {
+				min-height: 600px;
+				font-size: 1.2em;
+			}
+			padding: $gutter;
+			z-index: 1000;
+			&.copy-left {
+				@include media($tablet) {
+					@include span-columns(5);
+					min-height: auto;
+				}
+				@include media($desktop) {
+					min-height: 350px;
+					@include span-columns(6);
+				}
+			}
+			&.copy-right {
+				@include media($tablet) {
+					@include shift(4 of 8);
+					@include span-columns(4 of 8);
+				}
+				@include media($desktop) {
+					@include shift(6 of 12);
+					@include span-columns(6 of 12);
+				}
+			}
+			&.copy-center {
+				@include media($tablet) {
+					@include shift(1 of 8);
+					@include span-columns(6 of 8);
+				}
+				@include media($desktop) {
+					text-align: center;
+					@include shift(2 of 12);
+					@include span-columns(8 of 12);
+				}
+			}
+		}
+		ul {
+			padding-left: $gutter;
+			@extend %default-ul;
+			li {
+				padding-left: 0.5em;
+			}
+		}
+		ol {
+			padding-left: $gutter;
+			@extend %default-ol;
+			li {
+				padding-left: 0.5em;
+			}
+		}
+	}
+}
+
+#values {
+	background-image: url('#{"" + $image-directory}/values-group-mobile.jpg');
+	@include media($tablet) {
+		background-image: url('#{"" + $image-directory}/values-group.jpg');
+	}
+}
+
+#skate {
+	background-image: url('#{"" + $image-directory}/skate-mobile.jpg');
+	@include media($tablet) {
+		background-image: url('#{"" + $image-directory}/skate.jpg');
+	}
+}
+
+#dear-albert {
+	background-image: url('#{"" + $image-directory}/dear-albert-mobile.jpg');
+	@include media($tablet) {
+		background-image: url('#{"" + $image-directory}/dear-albert.jpg');
+	}
+}
+
+#beach-party {
+	background-image: url('#{"" + $image-directory}/beach-party-mobile.jpg');
+	@include media($tablet) {
+		background-image: url('#{"" + $image-directory}/beach-party.jpg');
+	}
+}
+
+#community-library {
+	background-image: url('#{"" + $image-directory}/community-library-mobile.jpg');
+	@include media($tablet) {
+		background-image: url('#{"" + $image-directory}/community-library.jpg');
+	}
+}
+
+#group-support-meeting {
+	background-position: left;
+	background-image: url('#{"" + $image-directory}/group-support-meeting-mobile.jpg');
+	@include media($tablet) {
+		background-image: url('#{"" + $image-directory}/group-support-meeting.jpg');
+	}
+}
+
+#big-project {
+	background-image: url('#{"" + $image-directory}/big-project-mobile.jpg');
+	@include media($tablet) {
+		background-image: url('#{"" + $image-directory}/big-project.jpg');
+	}
+}
+
+#drumming-workshop {
+	background-image: url('#{"" + $image-directory}/drumming-workshop-mobile.jpg');
+	@include media($tablet) {
+		background-image: url('#{"" + $image-directory}/drumming-workshop.jpg');
+	}
+}
+
+#fifty-years {
+	background-image: url('#{"" + $image-directory}/fifty-years-mobile.jpg');
+	@include media($tablet) {
+		background-image: url('#{"" + $image-directory}/fifty-years.jpg');
+	}
+}
+
+#in-numbers {
+	padding: $gutter;
+	color: $brand-primary;
+	background-color: #fff;
+	h1 {
+		padding-bottom: 0.25em;
+		border-bottom: 1px solid $brand-primary;
+	}
+	h2 {
+		margin: 0;
+	}
+}
+
+
+#purple {
+	padding: $gutter;
+	color: #ffffff;
+	background-color: $purple;
+	h1 {
+		padding-bottom: 0.25em;
+		border-bottom: 1px solid #ffffff;
+	}
+}
+
+#green {
+	padding: $gutter;
+	color: #ffffff;
+	background-color: $green;
+	h1 {
+		padding-bottom: 0.25em;
+		border-bottom: 1px solid #ffffff;
+	}
+}
+
+#blue {
+	padding: $gutter;
+	color: #ffffff;
+	background-color: $blue;
+	h1 {
+		padding-bottom: 0.25em;
+		border-bottom: 1px solid #ffffff;
+	}
+}
+
+#orange {
+	padding: $gutter;
+	color: #ffffff;
+	background-color: $orange;
+	h1 {
+		padding-bottom: 0.25em;
+		border-bottom: 1px solid #ffffff;
+	}
+	.facebook, .twitter {
+		background-color: $brand-primary;
+		background-repeat: no-repeat;
+		background-position: 15px center;
+		padding-left: 40px;
+		&:active, &:hover {
+			background: #fff;
+		}
+	}
+	
+	.facebook {
+		background-image: url('#{"" + $image-directory}/facebook.png');
+		background-size: 8px 18px;
+		&:active, &:hover {
+			background-repeat: no-repeat;
+			background-position: 15px center;
+			background-image: url('#{"" + $image-directory}/facebook-hover.png');
+			background-size: 8px 18px;
+		}
+	}
+	.twitter {
+		background-image: url('#{"" + $image-directory}/twitter.png');
+		background-size: 16px 13px;
+		&:active, &:hover {
+			background-repeat: no-repeat;
+			background-position: 15px center;
+			background-image: url('#{"" + $image-directory}/twitter-hover.png');
+			background-size: 16px 13px;
+		}
+	}
+}
+
+.icon-stats {
+	text-align: center;
+	img {
+		width: 150px;
+		height: auto;
+	}
+	@include media($bigscreen) {
+		min-height: 600px;
+		font-size: 1.2em;
+	}
+	.statistic {
+		@include media($tablet) {
+			@include span-columns(4 of 12);
+		}
+	}
+}
+
+
+#activitychart {
+	h1 {
+		border-bottom: 1px solid #fff;
+	}
+	background-color: $blue;
+	.copy {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		@include media($tablet) {
+			@include span-columns(4 of 8);
+			min-height: auto;
+		}
+		@include media($desktop) {
+			@include span-columns(6 of 12);
+			min-height: auto;
+		}
+	}
+	.chart-wrapper {
+		@include media($tablet) {
+			@include span-columns(4 of 8);
+		}
+		@include media($desktop) {
+			@include span-columns(6 of 12);
+			min-height: auto;
+		}
+	}
+}
+
+
+#content {
+	ul {
+		list-style: none;
+		li {
+			padding-left: 1em;
+		}
+		li:before {
+			content: "–";
+			color: $brand-primary;
+			width: 5px;
+			padding-right: 1em;
+			margin-left: -1.65em;
+		}
+	}
+
+}

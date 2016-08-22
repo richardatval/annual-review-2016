@@ -1,0 +1,83 @@
+$navigation-background: $brand-primary;
+
+header {
+	padding: 0 $gutter $gutter $gutter;
+	background-color: $navigation-background;
+	@include media($bigscreen) {
+		padding: 40px;
+	}
+	span {
+		padding-right: 130px;
+		font-size: 1.1em;
+		line-height: 1em;
+		padding-left: 32px;
+		background-position: center left;
+		background-size: 18px 32px;
+		background-repeat: no-repeat;
+		background-image: url('#{"" + $image-directory}/val-faces.png');
+		width: 100%;
+		border-bottom: 1px solid #fff;
+		display: block;
+		padding-top: $gutter;
+		padding-bottom: $gutter;
+	}
+	.container {
+		h1.title {
+			display: block;
+			padding-top: $gutter;
+			padding-bottom: $gutter;
+			text-align: center;
+			font-size: 4em;
+			font-weight: 300;
+			line-height: 90%;
+		}
+		h3.subtitle {
+			text-align: center;
+			font-size: 2.5em;
+		}
+		position: relative;
+		.facebook, .twitter {
+			background-color: $brand-primary;
+			background-repeat: no-repeat;
+			background-position: center center;
+			@include hide-text();
+			display: block;
+			width: 32px;
+			height: 32px;
+			padding: 0;
+			position: absolute;
+			border-radius: 100px;
+			&:active, &:hover {
+				background: #fff;
+			}
+		}
+		
+		.facebook {
+			background-image: url('#{"" + $image-directory}/facebook.png');
+			background-size: 8px 18px;
+			top: $gutter;
+			right: 0;
+			&:active, &:hover {
+				background-repeat: no-repeat;
+				background-position: center center;
+				@include hide-text();
+				background-image: url('#{"" + $image-directory}/facebook-hover.png');
+				background-size: 8px 18px;
+			}
+		}
+		.twitter {
+			background-image: url('#{"" + $image-directory}/twitter.png');
+			background-size: 16px 13px;
+			top: $gutter;
+			right: $gutter + 10px;
+			&:active, &:hover {
+				background-repeat: no-repeat;
+				background-position: center center;
+				@include hide-text();
+				background-image: url('#{"" + $image-directory}/twitter-hover.png');
+				background-size: 16px 13px;
+			}
+		}
+	}
+}
+

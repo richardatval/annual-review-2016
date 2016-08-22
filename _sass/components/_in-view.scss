@@ -1,0 +1,37 @@
+.animation-wrap {
+	overflow: hidden;
+	.animation-wrap-content {
+		position: relative;
+					&.from-right, &.from-left, &.from-top, &.from-bottom {
+						opacity: 0;
+						@include transition(opacity 0s ease-out 1s,opacity 1s ease-out, top 1s ease-out, left 1s ease-out);
+						&.delay-one {
+							transition-delay: 1s;
+						}
+						&.delay-two {
+							transition-delay: 2s;
+						}
+					}
+		&.from-right {
+			left: $gutter;
+		}
+		&.from-left {
+			left: -($gutter);
+		}
+		&.from-top {
+			top: -($gutter);
+		}
+		&.from-bottom {
+			top: $gutter;
+		}
+	}
+	&.is-in-view {
+		.animation-wrap-content {
+			&.from-right, &.from-left, &.from-top, &.from-bottom {
+				top: 0;
+				left: 0;
+				opacity: 1;
+			}
+		}
+	}
+}
