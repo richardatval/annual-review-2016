@@ -21,6 +21,10 @@ github: richardatval/annual-review-2016.valonline.org.uk
 logo_path: /img/logo.svg
 copyright: "Voluntary Action LeicesterShire is the trading name of Voluntary Action Leicester registered charity (No. 509300) Company Limited by Guarantee (No. 1357513) Registered in England and Wales. Copyright © 2016 Voluntary Action Leicester"
 
+#  Features
+
+googlecharts: false
+
 #  Social media settings
 
 facebook: "voluntaryactionleics"

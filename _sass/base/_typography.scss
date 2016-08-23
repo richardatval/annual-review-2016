@@ -107,17 +107,31 @@ blockquote {
 	float: left;
 	width: 100%;
 	display: block;
-	color: $brand-primary;
+	color: #sffffff;
 	line-height: 1.5em;
 	font-size: modular-scale(1);
 	padding-left: 30px;
+	padding-right: $gutter;
 	&:before {
 		font-size: 1em;
 		float: left;
-		font-size: modular-scale(4);
+		font-size: modular-scale(7);
 		content: '\201C';
-		margin-top: 0.28em;
-		margin-left: -30px;
-		width: 30px;
+		margin-top: 0.25em;
+		margin-left: -50px;
+		width: 50px;
+	}
+	footer {
+		margin-top: 2em;
+		line-height: 1.5em;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: modular-scale(-2);
+		&:before {
+			float: left;
+			content: "— ";
+			height: 4em;
+			width: 1.5em;
+		}
 	}
 }

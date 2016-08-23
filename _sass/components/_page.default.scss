@@ -47,6 +47,7 @@ section {
 				}
 			}
 			&.copy-center {
+				margin-top: 0;
 				@include media($tablet) {
 					@include shift(1 of 8);
 					@include span-columns(6 of 8);
@@ -133,6 +134,7 @@ section {
 }
 
 #fifty-years {
+	background-position: top;
 	background-image: url('#{"" + $image-directory}/fifty-years-mobile.jpg');
 	@include media($tablet) {
 		background-image: url('#{"" + $image-directory}/fifty-years.jpg');
@@ -146,6 +148,29 @@ section {
 	}
 }
 
+#bringing-groups-together {
+	background-position: top;
+	background-image: url('#{"" + $image-directory}/bringing-groups-together-mobile.jpg');
+	@include media($tablet) {
+		background-image: url('#{"" + $image-directory}/bringing-groups-together.jpg');
+	}
+}
+
+#healthwatch {
+	background-image: url('#{"" + $image-directory}/healthwatch-mobile.jpg');
+	@include media($tablet) {
+		background-image: url('#{"" + $image-directory}/healthwatch.jpg');
+	}
+}
+
+#rugby {
+	background-image: url('#{"" + $image-directory}/rugby-mobile.jpg');
+	@include media($tablet) {
+		background-image: url('#{"" + $image-directory}/rugby.jpg');
+	}
+}
+
+
 section.in-numbers {
 	padding: $gutter;
 	color: $brand-primary;
@@ -156,6 +181,19 @@ section.in-numbers {
 	}
 	h2 {
 		margin: 0;
+	}
+}
+
+section.quotes {
+	h1 {
+		text-align: center;
+	}
+	blockquote {
+		margin-left: $gutter;
+		margin-right: 0;
+		@include media($desktop) {
+			@include span-columns(11 of 24);
+		}
 	}
 }
 
