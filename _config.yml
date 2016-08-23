@@ -46,20 +46,3 @@ exclude: ['bower.json']
 #  Configuration for prose.io online editor
 prose:
   ignore: ['_includes','assets','_assets','_layouts','_plugins','/.jekyll-metadata','feed.xml','bin','js','css','_sass','_config.yml','bower.json']
-  media: img
-  metadata:
-    _posts:
-      - name: "date"
-        field:
-          label: "Date"
-          element: "text"
-          value: CURRENT_DATETIME
-      - name: "published"
-        field:
-          label: "Published"
-          element: "checkbox"
-          value: false
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "default"

@@ -15,3 +15,31 @@ section.charts {
 	}
 }
 
+#activitychart {
+	h1 {
+		border-bottom: 1px solid #fff;
+	}
+	background-color: $blue;
+	.copy {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		@include media($tablet) {
+			@include span-columns(4 of 8);
+			min-height: auto;
+		}
+		@include media($desktop) {
+			@include span-columns(6 of 12);
+			min-height: auto;
+		}
+	}
+	.chart-wrapper {
+		@include media($tablet) {
+			@include span-columns(4 of 8);
+		}
+		@include media($desktop) {
+			@include span-columns(6 of 12);
+			min-height: auto;
+		}
+	}
+}
