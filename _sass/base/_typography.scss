@@ -122,6 +122,11 @@ blockquote {
 		width: 50px;
 	}
 	footer {
+		a:link, a:visited {
+			color: #fff;
+			font-weight: normal;
+			text-transform: none;
+		}
 		margin-top: 2em;
 		line-height: 1.5em;
 		font-weight: bold;

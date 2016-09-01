@@ -8,7 +8,10 @@ header {
 	}
 	span {
 		padding-right: 130px;
-		font-size: 1.1em;
+		font-size: 15px;
+		@include media(420px) {
+			font-size: $base-font-size;
+		}
 		line-height: 1em;
 		padding-left: 32px;
 		background-position: center left;

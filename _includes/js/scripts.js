@@ -10,7 +10,7 @@ $(document).ready(function() {
 		}
 	});
 	
-	$('h1.title').fitText(0.84, { minFontSize: '75px' });
+	$('h1.title').fitText(0.84, { minFontSize: '60px' });
 	$('h3.subtitle').fitText(1.6, { minFontSize: '30px' });
 });
 

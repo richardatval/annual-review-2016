@@ -14,8 +14,8 @@ gems:
 #  Site settings
 title: VAL Annual Review 2015-2016
 description: Helping people change their lives for the better
-url: http://annual-review-2016.valonline.org.uk
-baseurl: 
+url: http://www.valonline.org.uk/2016
+baseurl: /2016
 email: helpline@valonline.org.uk
 github: richardatval/annual-review-2016.valonline.org.uk
 logo_path: /img/logo.svg
@@ -29,7 +29,6 @@ googlecharts: false
 
 facebook: "voluntaryactionleics"
 twitter : "valonline"
-instagram: ""
 
 permalink: pretty
 
