@@ -251,6 +251,14 @@ section.orange {
 	padding: $gutter;
 	color: #ffffff;
 	background-color: $orange;
+	p {
+		a:link, p a:visited {
+		color: lighten($orange, 40%);
+	}
+	a:hover {
+		color: #fff;
+	}
+	}
 	h1 {
 		padding-bottom: 0.25em;
 		border-bottom: 1px solid #ffffff;
