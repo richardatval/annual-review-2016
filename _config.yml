@@ -29,6 +29,8 @@ googlecharts: false
 
 facebook: "voluntaryactionleics"
 twitter : "valonline"
+ogimage: img/og-image.jpg
+twitterimage: img/og-image.jpg
 
 permalink: pretty
 
